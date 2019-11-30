@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.contact{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dp-form{
+    margin: 20px 0;
+}
+
+.dp-form input{
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+    font-weight: 300;
+    color: rgb(21, 21, 24);
+    letter-spacing: 0.11em;
+    padding: 15px 0;
+}
+
+.dp-form input:focus, .dp-form textarea:focus{
+    outline: 0;
+}
+
+.dp-form{
+    color: #000;
+}
+.dp-form textarea{
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+    font-weight: 300;
+    color: rgb(21, 21, 24);
+    letter-spacing: 0.11em;
+    padding: 15px 0;
+}
+.dp-contact{
+    justify-content: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px; 
+}
+
+.db-button:hover{
+    cursor: pointer;
+}
+.db-button{
+    width: 50%;
+    background: #FFC750;
+    padding: 15px;
+    border:none;
+    text-align: left;
+}
+
+.db-button button{
+    font-weight: 500;
+    background: #FFC750;
+    border:none;
+}
+.submit-icon{
+    float: right;
+}
+
+/*-----------------------------
+	Moble layout
+-----------------------------*/
+
+/* @media screen and (max-width: 768px) {
+	.contact-wrapper {
+		grid-template-areas:"dp-map" "dp-contact";
+        grid-template-columns: 100%;
+        background: red;
+    }
+} */
+
+
+
+.contact-wrapper{
+    display: grid;
+	grid-template-areas: "dp-map dp-contact";
+	grid-template-columns: 50% 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.dp-map{
+    grid-area: dp-map;
+}
+
+.dp-contact{
+    grid-area: dp-contact;
+}
+
+
+@media screen and (max-width: 768px) {
+	.contact-wrapper {
+		grid-template-areas: "dp-map"
+		                     "dp-contact";
+		grid-template-columns: 100%;
+    }
+}

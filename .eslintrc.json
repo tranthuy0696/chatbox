@@ -1,0 +1,12 @@
+{
+  "extends": "google",
+  "parserOptions": {
+    "ecmaVersion": 2018
+  },
+  "rules": {
+    "semi": 0,
+    "camelcase": 0,
+    "max-len":["error", 160],
+    "indent": ["error", 2]
+  }
+}
